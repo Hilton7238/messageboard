@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+    <style>
+        .left img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            animation-name: action;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes action {
+            0%{left: 50%}
+            50%{left: 30%}
+            100%{left: 50%}
+        }
+
+    </style>
+</head>
+<body>
+<a href="/login" class="left" style="position: absolute; top: 10px;left: 5px; border: 3px solid #6699CC; border-radius: 50%;width: 30px;height: 30px"><img src="../static/icon/left.png" alt="" width="15px"></a>
+
+<div style="margin: 30px auto;width: 400px"><img src="../static/icon/bye.gif" alt=""></div>
+</body>
+</html>

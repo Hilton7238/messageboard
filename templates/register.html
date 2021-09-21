@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../static/js/base.js"></script>
+    <script src="../static/js/register.js"></script>
+</head>
+<body>
+<div id="bgimg"></div>
+<a href="/login" class="left" style="position: absolute; top: 10px;left: 5px; border: 3px solid #6699CC; border-radius: 50%;width: 30px;height: 30px"><img src="../static/icon/left.png" alt="" width="15px"></a>
+<div class="float">
+    <span>本站所有权由@10086所有</span><br>
+    <span>如有问题，请联系上帝</span>
+</div>
+<div class="box">
+    <h2>Register</h2>
+    <form action="" method="post">
+        <span class="span_user"></span>
+        <span class="span_password"></span>
+        <span class="span_surepassword"></span>
+        <span class="span_imgcode"></span>
+        <input type="text" placeholder="用户名" id="user">
+        <input type="password" placeholder="密码" id="password">
+        <input type="password" placeholder="请再次确认密码" id="sure_password">
+        <div class="img-code" style="width: 350px">
+            <input type="text" placeholder="验证码" id="code">
+            <img src="/imgCode" alt="" id="imgcode" onclick="changCode()">
+        </div>
+        <div class="button-box">
+            <button value="determine" class="determine" type="button">确定</button>
+            <button value="reset" class="reset" type="button">重置</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

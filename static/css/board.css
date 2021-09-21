@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    position: relative;
+    background-color: #6699CC;
+    height: 110px;
+}
+.header span {
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img_left {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 158px;
+}
+.img_right {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 158px;
+}
+.header a {
+    position: absolute;
+    font-size: 14px;
+    top: 2px;
+    right: 2px;
+}
+.input-box {
+    position: relative;
+    height: 70px;
+    margin-top: 30px;
+}
+.input-box input{
+    position: absolute;
+    outline: none;  /*去掉点击时出现的内边框*/
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+}
+.input-box input:focus {
+    border: 1px solid #03a9f4;
+}
+.input-box button {
+    position: absolute;
+    width: 70px;
+    height: 72px;
+    background-color: #6699CC;
+    color: #ffffff;
+    border: 1px solid;
+    right: 0;
+}
+.main-box {
+    margin-top: 80px;
+}
+.main-box>:nth-child(6n+1) {
+    margin-left: 6px;
+}
+.text-box {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    margin-top: 30px;
+    width: 215px;
+    height: 262px;
+    transition: all 0.4s;
+}
+.text-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.text-box span{
+    display: block;
+}
+.text-box .top{
+    transform-style: preserve-3d;
+    position: absolute;
+    text-align: center;
+    width: 245px;
+    background-color: #6699CC;
+    color: #ffffff;
+    z-index: 2;
+    border-radius: 8px;
+}
+.text-box .text{
+    position: absolute;
+    background-color: #99CCFF;
+    color: #ffffff;
+    width: 220px;
+    height: 220px;
+    padding-top: 10px;
+    word-break: break-all; /*超过部分自动换行*/
+    left: 12px;
+    top: 32px;
+}
+.input-box img {
+    position: absolute;
+    visibility: hidden;
+    margin-top: -11px;
+    top: 50%;
+    right: 85px;
+    transition: all 0.4s;
+}
+.input-box img:hover {
+    transform: rotate(45deg);
+}
+.top-box {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 245px;
+    background-color: #6699CC;
+    color: #ffffff;
+    border-radius: 8px;
+}
+.top-box span {
+    display: block;
+}

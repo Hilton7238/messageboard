@@ -1,0 +1,55 @@
+.button-box button {
+    position: absolute;
+    color: #ffffff;
+    outline: none;
+    background: #03a9f4;
+    border: none;
+    width: 100px;
+    margin-top: 30px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 11px;
+    cursor:pointer;
+    top: -15px;
+}
+.button-box button[value="determine"] {
+    left: 0;
+}
+.button-box button[value="reset"]{
+    right: 0;
+}
+.button-box {
+    position: relative;
+    width: 350px;
+    height: 70px;
+    margin: 0 auto;
+}
+form>span[class="span_user"] {
+    top: -6px;
+}
+form>span[class="span_password"] {
+    top: 58px;
+}
+form>span[class="span_surepassword"] {
+    top: 120px;
+}
+form>span[class="span_imgcode"] {
+    right: 158px;
+    top: 184px;
+}
+.left img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: action;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes action {
+    0%{left: 50%}
+    50%{left: 30%}
+    100%{left: 50%}
+}

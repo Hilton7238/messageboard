@@ -1,0 +1,32 @@
+form>span[class="span_user"] {
+    top: -4px;
+}
+form>span[class="span_password"] {
+    top: 59px;
+}
+form>span[class="span_imgcode"] {
+    top: 122px;
+    right: 160px;
+}
+.box .register {
+    position: absolute;
+    right: 12px;
+    bottom: 2px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #000000;
+    color: #ffffff;
+}
+.box input[type="button"] {
+    color: #ffffff;
+    outline: none;
+    background: #03a9f4;
+    border: none;
+    width: 100px;
+    margin-top: 30px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 11px;
+    cursor:pointer;
+}
